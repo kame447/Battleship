@@ -855,6 +855,7 @@ public class Algorithm {
             int maxY = 0;
             int trueMaxX = 0;
             int trueMaxY = 0;
+            int trueMaxEF = 0;
             boolean isRetry = true;
             boolean isMove = false;
 
@@ -893,13 +894,14 @@ public class Algorithm {
                         for(int y = 0;y <=4;y++){
                             if(Forecast.getEF(x,y) >=  maxEF){
                                 //最大値を更新
-                                maxEF = Forecast.getEF(x,y);
                                 trueMaxX = x;
                                 trueMaxY = y; 
+                                trueMaxEF = Forecast.getEF(x,y);
                                 //攻撃可能なら記録
                                 if(AllyAttack.isAttackRangeValid(x,y,mapData)){
                                     maxX = x;
                                     maxY = y;
+                                    maxEF = Forecast.getEF(x,y);
                                 }
                                 
                                 }
@@ -1084,13 +1086,14 @@ public class Algorithm {
                     for(int y = 0;y <=4;y++){
                         if(Forecast.getEF(x,y) >=  maxEF){
                             //最大値を更新
-                            maxEF = Forecast.getEF(x,y);
                             trueMaxX = x;
                             trueMaxY = y; 
+                            trueMaxEF = Forecast.getEF(x,y);
                             //攻撃可能なら記録
                             if(AllyAttack.isAttackRangeValid(x,y,mapData)){
                                 maxX = x;
                                 maxY = y;
+                                maxEF = Forecast.getEF(x,y);
                             }
                             
                             }
@@ -1173,6 +1176,7 @@ public class Algorithm {
             int maxY = 0;
             int trueMaxX = 0;
             int trueMaxY = 0;
+            int trueMaxEF = 0;
             boolean isRetry = true;
             boolean isMove = false;
 
@@ -1211,13 +1215,14 @@ public class Algorithm {
                         for(int y = 0;y <=4;y++){
                             if(Forecast.getEF(x,y) >=  maxEF){
                                 //最大値を更新
-                                maxEF = Forecast.getEF(x,y);
                                 trueMaxX = x;
                                 trueMaxY = y; 
+                                trueMaxEF = Forecast.getEF(x,y);
                                 //攻撃可能なら記録
                                 if(AllyAttack.isAttackRangeValid(x,y,mapData)){
                                     maxX = x;
                                     maxY = y;
+                                    maxEF = Forecast.getEF(x,y);
                                 }
                                 
                                 }
@@ -1290,13 +1295,14 @@ public class Algorithm {
                     for(int y = 0;y <=4;y++){
                         if(Forecast.getEF(x,y) >=  maxEF){
                             //最大値を更新
-                            maxEF = Forecast.getEF(x,y);
                             trueMaxX = x;
                             trueMaxY = y; 
+                            trueMaxEF = Forecast.getEF(x,y);
                             //攻撃可能なら記録
                             if(AllyAttack.isAttackRangeValid(x,y,mapData)){
                                 maxX = x;
                                 maxY = y;
+                                maxEF = Forecast.getEF(x,y);
                             }
                             
                             }
